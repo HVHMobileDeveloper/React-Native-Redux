@@ -1,4 +1,11 @@
 # React-Native-Redux
+- Store:  holds our state - THERE IS ONLY ONE STATE
+- Action - state can be modified using action - SIMPLE OBJECTS
+- Dispatcher - Action needs to be sent by someone - know as dispatching an action 
+- Reducer : receives the action and modifies the state to give us a new state
+- Pure functions 
+- Only mandatory argument is the ’type’
+- Subscriber - listens for state change to update the ui (using connect).
 
 1. install libray 
 - react-redux 
