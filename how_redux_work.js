@@ -1,9 +1,10 @@
 # React-Native-Redux
 
-1. install libray 
-- react-redux 
-- redux
-2. create simple redux store 
+/**1. install libray 
+*- react-redux 
+*- redux
+*2. create simple redux store 
+*/
 
 import {createStore} from 'redux';
 
@@ -15,7 +16,9 @@ const reducer = (state = {value : 0 }, action ) => {
 
 const store = createStore (reducer);
 
-3. integrate redux store into React app
+/**
+*3. integrate redux store into React app
+*/
 
 import {Provider} from 'react-redux';
 
@@ -29,7 +32,9 @@ export default class ReduxDemo extends Component {
   }
 }
 
-4. Use state in store redux to render react component
+/**
+*4. Use state in store redux to render react component
+*/
 
 import {connect} from 'react-redux';
 
@@ -50,7 +55,9 @@ function mapStateToProps (state) {
 
 export default connect(mapStateToProps)(App);
 
-5. Dispatch action from components
+/**
+*5. Dispatch action from components
+*/
 
 onButtonPressed() {
   this.props.dispatch({type: 'UP'})
