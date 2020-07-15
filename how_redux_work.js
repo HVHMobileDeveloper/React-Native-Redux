@@ -8,7 +8,11 @@
 
 import {createStore} from 'redux';
 
-const reducer = (state = {value : 0 }, action ) => {
+const initializeValue = {
+  value: 0
+}
+
+const reducer = (state = initializeValue, action ) => {
   if (action.type === 'UP') return {value : state.value + 1};
   if (action.type === 'DOWN') return {value: state.value - 1};
   return state;
